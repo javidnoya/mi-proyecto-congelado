@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorCalculo">
+   <children>
+      <Pane layoutY="450.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <Text fill="#d3c7c7" layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Javier Domínguez Noya" wrappingWidth="241.13671875" />
+            <Text fill="#d3c7c7" layoutX="526.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invizimath" wrappingWidth="59.13671875" />
+         </children>
+      </Pane>
+      <Pane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #1b003a; -fx-border-color: #4d4d4d;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logoDorado.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="550.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b2b2b; -fx-border-color: #3c3c3c;">
+         <children>
+            <Button layoutX="25.0" layoutY="20.0" mnemonicParsing="false" onAction="#verMenu" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane fx:id="panelJuego" disable="true" layoutX="71.0" layoutY="74.0" prefHeight="266.0" prefWidth="458.0" style="-fx-background-color: #ed6207; -fx-border-color: #8a36d2;">
+               <children>
+                  <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="#fbe065" height="50.0" layoutX="43.0" layoutY="37.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+                  <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="#c4c4c4" height="50.0" layoutX="211.0" layoutY="37.0" stroke="BLACK" strokeType="INSIDE" width="207.0" />
+                  <Button fx:id="btnSuma" layoutX="229.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickOperacion" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #76d4bc; -fx-border-color: #000000;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/suma.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnResta" layoutX="297.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickOperacion" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #76d4bc; -fx-border-color: #000000;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/resta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnMulti" layoutX="363.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickOperacion" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #76d4bc; -fx-border-color: #000000;">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/multi.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="btnBorrar" disable="true" layoutX="290.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickBorrar" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #76d4bc; -fx-border-color: #000000;" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Clear%20Symbol.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn1" layoutX="24.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickNumero" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #ae0000; -fx-border-color: #000000;" />
+                  <Button fx:id="btn2" layoutX="78.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickNumero" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #ae0000; -fx-border-color: #000000;" />
+                  <Button fx:id="btn3" layoutX="131.0" layoutY="133.0" mnemonicParsing="false" onAction="#clickNumero" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #ae0000; -fx-border-color: #000000;" />
+                  <Button fx:id="btn4" layoutX="24.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickNumero" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #ae0000; -fx-border-color: #000000;" />
+                  <Button fx:id="btn5" layoutX="78.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickNumero" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #ae0000; -fx-border-color: #000000;" />
+                  <Button fx:id="btn6" layoutX="131.0" layoutY="191.0" mnemonicParsing="false" onAction="#clickNumero" prefHeight="30.0" prefWidth="40.0" style="-fx-background-color: #ae0000; -fx-border-color: #000000;" />
+                  <Label fx:id="lblRec1" layoutX="79.0" layoutY="52.0" prefHeight="20.0" prefWidth="36.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRec2" layoutX="230.0" layoutY="52.0" prefHeight="20.0" prefWidth="169.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="lblNombre" layoutX="120.0" layoutY="43.0" prefHeight="20.0" prefWidth="133.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTiempo" layoutX="120.0" layoutY="355.0" prefHeight="20.0" prefWidth="56.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="479.0" layoutY="350.0" mnemonicParsing="false" onAction="#jugar" prefHeight="28.0" prefWidth="40.0" style="-fx-background-color: #8a36d2; -fx-border-color: #1b003a;" textFill="#8dc969">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Circled%20Play.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="82.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Male%20User.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="82.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Hourglass.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="483.0" layoutY="39.0" mnemonicParsing="false" onAction="#mostrarAyuda" prefHeight="25.0" prefWidth="25.0" style="-fx-border-color: #8a36d2;">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/Question%20Cursor.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>

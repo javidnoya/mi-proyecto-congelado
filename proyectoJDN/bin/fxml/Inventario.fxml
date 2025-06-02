@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorColeccion">
+   <children>
+      <Pane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1b003a;">
+         <children>
+            <Pane layoutX="82.0" layoutY="85.0" prefHeight="230.0" prefWidth="437.0" style="-fx-background-color: #2b2b2b; -fx-border-color: #8a36d2;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="305.0" layoutY="24.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Sandflame_Colt.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="366.0" layoutY="24.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Sandflame_Max.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="24.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Tigershark_Colt.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="143.0" layoutY="24.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Tigershark_Max.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="88.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Axolotl_Colt.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="143.0" layoutY="88.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Axolotl_Max.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="247.0" layoutY="88.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Ocelotl_Pup.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="305.0" layoutY="88.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Ocelotl_Colt.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="366.0" layoutY="88.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Ocelotl_Max.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="29.0" layoutY="155.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Star_dragon_Pup.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="155.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Star_dragon_Colt.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="143.0" layoutY="155.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Star_dragon_Max.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="247.0" layoutY="155.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Griffonator_Pup.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="305.0" layoutY="155.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Griffonator_Colt.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="366.0" layoutY="155.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Icono_de_Griffonator_Max.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="21.0" layoutY="20.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #2b2b2b;">
+                     <graphic>
+                        <ImageView fx:id="img1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Icono_de_Tigershark_Pup.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip fx:id="tt1" height="150.0" text="Empty Tooltip" width="150.0" />
+                     </tooltip>
+                  </Button>
+                  <Button layoutX="239.0" layoutY="20.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #2b2b2b;">
+                     <graphic>
+                        <ImageView fx:id="img2" fitHeight="40.0" fitWidth="40.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Icono_de_Sandflame_Pup.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip fx:id="tt2" height="150.0" text="Empty Tooltip" width="150.0" />
+                     </tooltip>
+                  </Button>
+                  <Button layoutX="21.0" layoutY="84.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #2b2b2b;">
+                     <tooltip>
+                        <Tooltip fx:id="tt3" text="Empty Tooltip" />
+                     </tooltip>
+                     <graphic>
+                        <ImageView fx:id="img3" fitHeight="40.0" fitWidth="40.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Icono_de_Axolotl_Pup.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="280.0" layoutY="26.0" mnemonicParsing="false" onAction="#verMenu" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logoDorado.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="550.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="450.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <Text fill="#d3c7c7" layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Javier Domínguez Noya" wrappingWidth="241.13671875" />
+            <Text fill="#d3c7c7" layoutX="526.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invizimath" wrappingWidth="59.13671875" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

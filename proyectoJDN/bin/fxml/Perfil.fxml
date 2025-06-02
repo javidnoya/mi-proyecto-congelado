@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-border-color: #3C3C3C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorPerfil">
+   <children>
+      <BorderPane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2B2B2B;">
+         <left>
+            <Pane prefHeight="403.0" prefWidth="155.0" style="-fx-background-color: #1A1A1A; -fx-border-color: #3C3C3C;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#verMenu" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #230443;">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button layoutX="34.0" layoutY="253.0" mnemonicParsing="false" onAction="#cerrarSesion" style="-fx-background-color: #3c3c3c; -fx-border-color: #900000;" text="Cerrar Sesión" textFill="#f24242" />
+                  <Button layoutX="32.0" layoutY="338.0" mnemonicParsing="false" onAction="#borrarUsuario" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #900000;" text="Borrar usuario" textFill="WHITE" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="37.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/pfp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="96.0" fitWidth="93.0" layoutX="31.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/pngtree-gold-and-black-twitch-gaming-overlay-facecam-streaming-border-frame-png-image_6231878.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3C3C3C;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="400.0" prefWidth="220.0" style="-fx-border-color: #3C3C3C; -fx-background-color: #2B2B2B;">
+                     <children>
+                        <Line endX="100.0" layoutX="102.0" layoutY="49.0" startX="-85.0" stroke="#4d4d4d" />
+                        <Label fx:id="lblUsuario" layoutX="17.0" layoutY="74.0" prefHeight="27.0" prefWidth="184.0" text="Mi Usuario" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="48.0" layoutY="251.0" mnemonicParsing="false" onAction="#mostrarCampos" style="-fx-background-color: #3c3c3c; -fx-border-color: #8a36d2;" text="Cambiar Contraseña" textFill="WHITE" />
+                        <Label fx:id="lblCorreo" layoutX="48.0" layoutY="127.0" prefHeight="17.0" prefWidth="153.0" text="correo" textFill="WHITE" />
+                        <Label fx:id="lblFechaNacimiento" layoutX="48.0" layoutY="169.0" prefHeight="17.0" prefWidth="153.0" text="fecha de nacimiento" textFill="WHITE" />
+                        <Label fx:id="lblFechaRegistro" layoutX="48.0" layoutY="208.0" prefHeight="17.0" prefWidth="153.0" text="fecha de registro" textFill="WHITE" />
+                        <PasswordField fx:id="pfNuevaContrasenya" layoutX="48.0" layoutY="298.0" prefHeight="25.0" prefWidth="124.0" promptText="Nueva Contraseña" visible="false" />
+                        <Button fx:id="btnGuardar" layoutX="115.0" layoutY="338.0" mnemonicParsing="false" onAction="#guardarNuevaContrasenya" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;" visible="false">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Done.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Letter.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Calendar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Calendar.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Lock.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="225.0" prefHeight="400.0" prefWidth="220.0" style="-fx-background-color: #2B2B2B;">
+                     <children>
+                        <Line endX="100.0" layoutX="102.0" layoutY="49.0" startX="-85.0" stroke="#4d4d4d" />
+                        <Label layoutX="18.0" layoutY="74.0" prefHeight="27.0" prefWidth="184.0" text="Estadísticas" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblElo" layoutX="49.0" layoutY="127.0" prefHeight="17.0" prefWidth="153.0" text="elo" textFill="WHITE" />
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="49.0" layoutY="156.0" prefHeight="17.0" prefWidth="149.0" text="Distancia media al objetivo:" textFill="WHITE" />
+                        <Label fx:id="lblDistancia" layoutX="64.0" layoutY="183.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="49.0" layoutY="208.0" prefHeight="17.0" prefWidth="149.0" text="Total de partidas:" textFill="WHITE" />
+                        <Label fx:id="lblPartidas" layoutX="64.0" layoutY="234.0" text="Label" textFill="WHITE" />
+                        <Label layoutX="51.0" layoutY="259.0" prefHeight="17.0" prefWidth="149.0" text="Ranking" textFill="WHITE" />
+                        <Label fx:id="lblRanking" layoutX="64.0" layoutY="285.0" text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="17.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <Pane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #1b003a; -fx-border-color: #4d4d4d;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logoDorado.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="550.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #230443;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Close.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </Pane>
+      <Pane layoutY="450.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <Text fill="#d3c7c7" layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Javier Domínguez Noya" wrappingWidth="241.13671875" />
+            <Text fill="#d3c7c7" layoutX="526.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invizimath" wrappingWidth="59.13671875" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

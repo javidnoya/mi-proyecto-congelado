@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "numeros": [6, 2, 3, 1, 5, 10],
+    "objetivo": 23,
+    "solucionIA": "5 * 3 + 10 + 2",
+    "totalIA": 27
+  },
+  {
+    "id": 2,
+    "numeros": [1, 2, 4, 6, 8, 10],
+    "objetivo": 60,
+    "solucionIA": "10 * 6",
+    "totalIA": 60
+  },
+  {
+    "id": 3,
+    "numeros": [1, 3, 5, 7, 9, 25],
+    "objetivo": 50,
+    "solucionIA": "25 + 9 + 7 + 5 + 3 + 1",
+    "totalIA": 50
+  },
+  {
+    "id": 4,
+    "numeros": [2, 4, 6, 8, 10, 12],
+    "objetivo": 96,
+    "solucionIA": "12 * 8",
+    "totalIA": 96
+  },
+  {
+    "id": 5,
+    "numeros": [1, 2, 3, 4, 5, 100],
+    "objetivo": 101,
+    "solucionIA": "100 + 1",
+    "totalIA": 101
+  },
+  {
+    "id": 6,
+    "numeros": [2, 5, 6, 9, 10, 50],
+    "objetivo": 95,
+    "solucionIA": "10 * 9 + 5",
+    "totalIA": 95
+  },
+  {
+    "id": 7,
+    "numeros": [1, 2, 3, 4, 10, 25],
+    "objetivo": 100,
+    "solucionIA": "25 * 4",
+    "totalIA": 100
+  },
+  {
+    "id": 8,
+    "numeros": [2, 5, 7, 10, 25, 50],
+    "objetivo": 98,
+    "solucionIA": "50 + 25 + 10 + 7 + 5",
+    "totalIA": 97
+  },
+  {
+    "id": 9,
+    "numeros": [1, 3, 6, 9, 12, 20],
+    "objetivo": 65,
+    "solucionIA": "20 + 12 + 9 + 6 + 3 + 1",
+    "totalIA": 51
+  },
+  {
+    "id": 10,
+    "numeros": [4, 8, 15, 16, 23, 42],
+    "objetivo": 100,
+    "solucionIA": "42 + 23 + 15 + 16",
+    "totalIA": 96
+  },
+  {
+    "id": 11,
+    "numeros": [1, 2, 4, 6, 8, 10],
+    "objetivo": 50,
+    "solucionIA": "10 * 4 + 2",
+    "totalIA": 42
+  },
+  {
+    "id": 12,
+    "numeros": [3, 7, 11, 13, 17, 19],
+    "objetivo": 90,
+    "solucionIA": "19 + 17 + 13 + 11 + 7 + 3",
+    "totalIA": 70
+  },
+  {
+    "id": 13,
+    "numeros": [1, 3, 5, 9, 12, 20],
+    "objetivo": 61,
+    "solucionIA": "20 + 12 + 9 + 5 + 3",
+    "totalIA": 49
+  },
+  {
+    "id": 14,
+    "numeros": [2, 5, 6, 7, 9, 14],
+    "objetivo": 55,
+    "solucionIA": "14 + 9 + 7 + 6 + 5",
+    "totalIA": 41
+  },
+  {
+    "id": 15,
+    "numeros": [5, 10, 15, 20, 30, 40],
+    "objetivo": 120,
+    "solucionIA": "40 + 30 + 20 + 10 + 5",
+    "totalIA": 105
+  },
+  {
+    "id": 16,
+    "numeros": [1, 4, 6, 8, 9, 50],
+    "objetivo": 80,
+    "solucionIA": "50 + 9 + 8 + 6",
+    "totalIA": 73
+  },
+  {
+    "id": 17,
+    "numeros": [2, 3, 7, 11, 13, 18],
+    "objetivo": 60,
+    "solucionIA": "18 + 13 + 11 + 7 + 3 + 2",
+    "totalIA": 54
+  }
+]

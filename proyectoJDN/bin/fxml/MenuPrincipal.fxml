@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorMenu">
+   <children>
+      <BorderPane layoutY="50.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2B2B2B;">
+         <left>
+            <Pane prefHeight="287.0" prefWidth="155.0" style="-fx-background-color: #1A1A1A;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="48.0" layoutY="40.0" mnemonicParsing="false" onAction="#verPerfil" style="-fx-background-color: #3c3c3c; -fx-border-color: #8a36d2;" text="Mi Perfil" textFill="#f2efef" />
+                  <Button layoutX="40.0" layoutY="187.0" mnemonicParsing="false" onAction="#verInventario" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #8a36d2;" text="Invizimals" textFill="WHITE">
+                     <tooltip>
+                        <Tooltip text="Accede a tu colección de Invizimals" />
+                     </tooltip></Button>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="400.0" prefWidth="462.0" style="-fx-background-color: #fea31a;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="2.0" prefHeight="143.0" prefWidth="393.0" style="-fx-border-color: #3c3c3c; -fx-background-color: #2b2b2b;">
+                     <children>
+                        <Button layoutX="298.0" layoutY="92.0" mnemonicParsing="false" onAction="#verCurso" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #8a36d2;">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Right.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Line endX="147.5" fill="#949191" layoutX="106.0" layoutY="49.0" startX="-91.0" stroke="#949191" />
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="255.0" text="Matemáticas: El curso básico" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea layoutX="14.0" layoutY="72.0" prefHeight="50.0" prefWidth="241.0" style="-fx-background-color: #4d4d4d;" text="Ya está disponible el curso completo &#10;donde podrás obtener una base completa&#10;en la ciencia más importante de la historia &#10;que beneficiará............." />
+                     </children></Pane>
+                  <Pane layoutX="2.0" layoutY="143.0" prefHeight="140.0" prefWidth="393.0" style="-fx-border-color: #3c3c3c; -fx-background-color: #2B2B2B;">
+                     <children>
+                        <Button layoutX="296.0" layoutY="85.0" mnemonicParsing="false" onAction="#verCalculo" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #8a36d2;">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Right.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="230.0" text="Juego de cálculo" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="44.5" fill="#949191" layoutX="108.0" layoutY="48.0" startX="-91.0" stroke="#949191" />
+                        <TextArea layoutX="15.0" layoutY="65.0" prefHeight="50.0" prefWidth="227.0" text="Adéntrate a jugar al minijuego de cálculo&#10;donde podrás competir con otros jugadores&#10;para conseguir todos los Invizimals" />
+                     </children></Pane>
+                  <ImageView fitHeight="124.0" fitWidth="395.0" layoutX="1.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/banner.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <Pane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #1b003a; -fx-border-color: #4d4d4d;">
+         <children>
+            <Button layoutX="550.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="23.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logoDorado.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="450.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <Text fill="#d3c7c7" layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Javier Domínguez Noya" wrappingWidth="241.13671875" />
+            <Text fill="#d3c7c7" layoutX="526.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invizimath" wrappingWidth="59.13671875" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

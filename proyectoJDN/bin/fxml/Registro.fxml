@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #4d4d4d;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorRegistro">
+   <children>
+      <BorderPane layoutY="49.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c;">
+         <center>
+            <Pane prefHeight="418.0" prefWidth="350.0" style="-fx-background-color: #2B2B2B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="38.0" layoutY="38.0" text="Nuevo Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="160.0" layoutX="139.0" layoutY="80.0" startX="-100.0" stroke="#868686" />
+                  <TextField fx:id="tfNombre" layoutX="71.0" layoutY="106.0" prefHeight="25.0" prefWidth="122.0" promptText="Usuario" style="-fx-background-color: #4D4D4D; -fx-text-fill: #ffffff;">
+                     <tooltip>
+                        <Tooltip text="Debe contener entre 8 y 14 caracteres" />
+                     </tooltip></TextField>
+                  <TextField fx:id="tfCorreo" layoutX="72.0" layoutY="246.0" prefHeight="25.0" prefWidth="194.0" promptText="Correo electrónico" style="-fx-background-color: #4D4D4D; -fx-text-fill: #ffffff;" />
+                  <DatePicker fx:id="dpNacimiento" layoutX="72.0" layoutY="292.0" prefHeight="25.0" prefWidth="149.0" promptText="Fecha de nacimiento" style="-fx-background-color: #4d4d4d;" />
+                  <Button fx:id="botonConfirmar" layoutX="73.0" layoutY="338.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="50.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #8a36d2;">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Done.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <PasswordField fx:id="pfContrasenya" layoutX="72.0" layoutY="155.0" promptText="Contraseña" style="-fx-background-color: #4D4D4D; -fx-text-fill: #ffffff;" />
+                  <PasswordField fx:id="pfConfirmarContrasenya" layoutX="72.0" layoutY="202.0" promptText="Confirmar contraseña" style="-fx-background-color: #4D4D4D; -fx-text-fill: #ffffff;" />
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="38.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Letter.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="38.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Lock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="38.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Male%20User.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="38.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Calendar.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="260.0" layoutY="32.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #230443;">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children></Pane>
+         </center>
+         <right>
+            <VBox prefHeight="400.0" prefWidth="259.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="408.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/img/inviziDerecha.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+      <Pane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #1b003a; -fx-border-color: #4d4d4d;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logoDorado.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="550.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="50.0" prefWidth="51.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="452.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <Text fill="#d3c7c7" layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Javier Domínguez Noya" wrappingWidth="241.13671875" />
+            <Text fill="#d3c7c7" layoutX="531.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invizimath" wrappingWidth="59.13671875" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

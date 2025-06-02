@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControladorCurso">
+   <children>
+      <Pane layoutY="450.0" prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #3c3c3c; -fx-border-color: #4d4d4d;">
+         <children>
+            <Text fill="#d3c7c7" layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© Javier Domínguez Noya" wrappingWidth="241.13671875" />
+            <Text fill="#d3c7c7" layoutX="526.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invizimath" wrappingWidth="59.13671875" />
+         </children>
+      </Pane>
+      <Pane prefHeight="50.0" prefWidth="600.0" style="-fx-background-color: #1b003a; -fx-border-color: #4d4d4d;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="21.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logoDorado.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="550.0" mnemonicParsing="false" onAction="#cerrarAplicacion" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #1b003a;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TabPane layoutY="50.0" prefHeight="402.0" prefWidth="600.0" style="-fx-background-color: #2b2b2b;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Mis niveles">
+            <content>
+              <AnchorPane disable="true" minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="55.0" layoutY="21.0" text="Potencias I" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="392.0" layoutX="155.0" layoutY="49.0" startX="-100.0" stroke="#e8dddd" />
+                        <Line endX="392.0" layoutX="155.0" layoutY="269.0" startX="-100.0" stroke="#e8dddd" />
+                        <Pane layoutX="54.0" layoutY="285.0" prefHeight="71.0" prefWidth="495.0" style="-fx-background-color: #1b003a; -fx-border-color: #8a36d2;">
+                           <children>
+                              <Button layoutX="25.0" layoutY="16.0" mnemonicParsing="false" onAction="#verMenu" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #4d4d4d; -fx-border-color: #4d4d4d;">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/Back.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="142.0" layoutY="38.0" prefHeight="20.0" prefWidth="61.0" text="Progreso:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label layoutX="142.0" layoutY="16.0" prefHeight="17.0" prefWidth="50.0" text="Tema: 1" textFill="#f5f5f5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="lblProgreso" layoutX="203.0" layoutY="38.0" text="0 / 4" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnNvl1" layoutX="101.0" layoutY="84.0" mnemonicParsing="false" onAction="#verNvl1" text="Nvl 1" />
+                        <Button fx:id="btnNvl2" disable="true" layoutX="162.0" layoutY="187.0" mnemonicParsing="false" text="Nvl 2" />
+                        <Button disable="true" layoutX="300.0" layoutY="120.0" mnemonicParsing="false" text="Nvl 3" />
+                        <Button disable="true" layoutX="441.0" layoutY="212.0" mnemonicParsing="false" text="Nvl 4" />
+                        <Line endX="35.0" endY="67.0" layoutX="153.0" layoutY="120.0" startX="-8.0" startY="-11.0" stroke="#8a36d2" />
+                        <Line endX="-15.0" endY="-92.0" layoutX="315.0" layoutY="237.0" startX="-109.0" startY="-37.5" stroke="#8a36d2" />
+                        <Line endX="104.0" endY="68.0" layoutX="352.0" layoutY="144.0" startX="-8.0" startY="-4.0" stroke="#8a36d2" />
+                        <ImageView fx:id="img1" fitHeight="22.0" fitWidth="22.0" layoutX="71.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img2" fitHeight="22.0" fitWidth="22.0" layoutX="133.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="272.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="413.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../img/Starfish.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Mis lecciones">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblLecciones" layoutX="44.0" layoutY="152.0" prefHeight="27.0" prefWidth="504.0" text="Cuando completes niveles aquí podrás consultar lo aprendido" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane fx:id="panelLeccion" layoutY="35.0" prefHeight="211.0" prefWidth="600.0" style="-fx-background-color: #2b2b2b; -fx-border-color: #4d4d4d;" visible="false">
+                           <children>
+                              <Label layoutX="57.0" layoutY="18.0" prefHeight="17.0" prefWidth="106.0" text="Propiedad" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="361.0" layoutY="18.0" prefHeight="17.0" prefWidth="106.0" text="Ejemplo" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="-3.0" layoutY="45.0" prefHeight="5.0" prefWidth="600.0" />
+                              <Label layoutX="57.0" layoutY="60.0" text="a¹ = a" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="361.0" layoutY="126.0" prefHeight="20.0" prefWidth="177.0" text="(2 × 5)³ = 2³ × 5³ = 1000" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="361.0" layoutY="60.0" text="4¹ = 4" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="92.0" text="a⁰ = 1 (a ≠ 0)" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="361.0" layoutY="92.0" text="7⁰ = 1" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="52.0" layoutY="126.0" text=" (ab)ⁿ = aⁿ × bⁿ" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="162.0" prefHeight="20.0" prefWidth="106.0" text="(a/b)ⁿ = aⁿ / bⁿ" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="361.0" layoutY="162.0" text="(2/3)² = 2² / 3² = 4/9" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
